@@ -7,8 +7,7 @@
     "start-server": "node server.js"
   },
   "dependencies": {
-    "json-server": "^0.16.3",
-    "cors": "^2.8.5"
-  },
-  "devDependencies": {}
+    "cors": "^2.8.5",
+    "json-server": "^0.16.3"
+  }
 }
