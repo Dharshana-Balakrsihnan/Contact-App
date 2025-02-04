@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   //useNavigate,
@@ -144,7 +144,6 @@ function App() {
             }
           />
           <Route path="/contact/:id" Component={ContactDetail} />
-          
         </Routes>
       </Router>
     </div>

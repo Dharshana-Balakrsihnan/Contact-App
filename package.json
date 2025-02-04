@@ -1,10 +1,14 @@
 {
+  "homepage": "https://Dharshana-Balakrsihnan.github.io/React-Folder/Folder",
   "name": "contact-app",
   "version": "1.0.0",
   "scripts": {
     "start": "concurrently \"npm run start-client\" \"npm run start-server\"",
-    "start-client": "cd ./contact-hub && npm start",
-    "start-server": "cd ./server-api && json-server -p 3006 -w db.json"
+    "build": "react-scripts build",
+    "start-client": "cd contact-hub && npm start",
+    "start-server": "cd server-api && npx json-server --watch db.json --port 3006",
+    "predeploy": "cd ./contact-hub && npm run build",
+    "deploy": "gh-pages -d contact-hub/build"
   },
   "dependencies": {
     "concurrently": "^6.0.0"
